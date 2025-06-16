@@ -51,22 +51,19 @@ margin: 0 auto;
 }
 .logo-accent {
     color: #2e2f42;
+    margin-right: 76px
 }
 .header-container{
     display: flex;
-    flex-direction: row;
     align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
   gap: 76px;
-  justify-content: space-between;
 }
 .nav {
     display: flex;
    gap: 40px;
-    justify-content: space-between;
     align-items: center;
-    margin-right: auto;
 }
 .contact-block ul {
   display: flex;
@@ -75,7 +72,6 @@ margin: 0 auto;
 .nav-menu {
     display: flex;
     gap: 40px;
-    justify-content: flex-start;
     align-items: center;
   list-style: none;
 }
@@ -95,7 +91,6 @@ margin: 0 auto;
 .contact-block {
     font-style: normal;
     display: flex;
-  flex-direction: column;
   gap: 4px;
 }
 .contact-link {
@@ -109,18 +104,13 @@ margin: 0 auto;
 }
 .contact-list {
     display: flex;
-    flex-direction: row;
-    gap: 4px;
+    gap: 40px;
 }
 .contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
 }
-.hero-section {
-    background-color: #2e2f42;
-    text-align: center;
-    padding: 188px 0; 
-}
+
 .hero-section .container {
   display: flex;
   flex-direction: column;
@@ -136,7 +126,14 @@ margin: 0 auto;
     max-width: 496px;
   margin: 0 auto 48px;
 }
-
+.hero-section {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
 .hero-button {
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -152,44 +149,36 @@ margin: 0 auto;
   transition: background-color 250ms ease-in-out;
   min-width: 169px
 }
-    
-
+  
 .hero-button:hover,
 .hero-button:focus {
     background-color: #404bbf;
 } 
-
-.hero-section {
-    padding: 120px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 24px;
-}
 .services-list,
 .team-list,
 .portfolio-list {
   display: flex;
-    flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 0;
-  margin: 0;
+  
 }
 .services-section {
     background-color: #FFFFFF;
     padding: 120px 0;
 }
- .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
+
 .heading-services {
     font-weight: 500;
         font-size: 20px;
@@ -200,8 +189,7 @@ margin: 0 auto;
 }
 
 .service-item {
-    padding: 24px;
-    flex-basis: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 .description {
         font-size: 16px;
@@ -229,12 +217,8 @@ margin: 0 auto;
 }
 .team-item {
 border-radius: 0px 0px 4px 4px; 
-padding: 0px 0px 32px 0px;
-width: 264px;
-height: 380px;
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
-flex-basis: calc((100% - 72px) / 4);
+width: calc((100% - 72px) / 4);
 }
 .team-role {
    padding: 32px 0 
@@ -254,7 +238,6 @@ flex-basis: calc((100% - 72px) / 4);
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    margin-bottom: 24px;
 }
 .portfolio-section {
     padding-top: 120px;
@@ -273,7 +256,9 @@ flex-basis: calc((100% - 72px) / 4);
 }
 .portfolio-list > li {
     background-color: #FFFFFF;
-    row-gap: 48px; 
+}
+.portfolio-list {
+  row-gap: 48px;
 }
 .portfolio-name {
     font-weight: 500;
@@ -301,25 +286,20 @@ flex-basis: calc((100% - 72px) / 4);
   }  
   .footer-container {
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 48px 0;
     gap: 24px;
     flex-wrap: wrap;
     max-width: 264px;
-   
   }
   .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
+  line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px; 
-    
   }
   .logo-accent-footer {
     color: #f4f4fd
