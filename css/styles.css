@@ -68,9 +68,8 @@ margin: 0 auto;
   margin-left: auto;
   justify-content: space-between;
 }
-.nav {
+.main-nav {
     display: flex;
-   gap: 40px;
     align-items: center;
 }
 
@@ -296,11 +295,6 @@ width: calc((100% - 72px) / 4);
     background-color: #2E2F42;
     padding: 100px 0; 
   }  
-  .footer-container {
-    width: 1158px;
-      margin: 0 auto;
-      padding: 0 15px;
-  }
 .footer-container .container {
   width: 1158px;
     margin: 0 auto;
