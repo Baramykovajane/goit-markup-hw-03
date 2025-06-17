@@ -205,10 +205,7 @@ padding: 0 15px;
 }
 .team-section {
     background-color: #F4F4FD;
-    padding-top: 120px;
-  padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 120px 0;
 }
 .team-heading {
         font-size: 36px;
@@ -251,11 +248,9 @@ width: calc((100% - 72px) / 4);
     text-align: center;
 }
 .portfolio-section {
+    background-color: #FFFFFF;
     padding-top: 120px;
-  padding-bottom: 120px;
-    background-color: #E7E9FC;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-bottom: 120px;
 }
 .portfolio-heading {
     font-size: 36px;
