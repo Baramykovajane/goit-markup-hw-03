@@ -30,15 +30,17 @@ img {
 	max-width: 100%;
 }
 .container { 
-  max-width: 1440px;
-  margin: 0 auto;
+max-width:1158px; 
+margin: 0 auto;
+padding: 0 15px;
 }
 .header {
   border-bottom: 1px solid #e7e9fc
 }
 .header .container {
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
+  margin: 0 auto;
 } 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -50,31 +52,32 @@ img {
     color: #4d5ae5;
     text-decoration: none;
     margin-right: 76px;
+    display: inline-block;
     
 }
 .logo-accent {
     color: #2e2f42; 
 }
 .header-container {
-  display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 156px;
-    height: 72px;
-    border-bottom: 1px solid #e7e9fc;
+    display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      padding: 24px 156px;
+      height: 72px;
+      border-bottom: 1px solid #e7e9fc;
 }
 .main-nav {
     display: flex;
     align-items: center;
 }
+
 .nav-menu {
-  display: flex;
-  gap: 40px;
-  align-items: center; 
+    display: flex;
+    gap: 40px;
+    align-items: center; 
   list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 .nav-link {
     font-family: "Roboto", sans-serif;
@@ -105,8 +108,8 @@ img {
     display: flex;
     gap: 40px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-left: 0px;
+      margin-left: 332px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -118,6 +121,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 .hero-title {
     font-size: 56px;
@@ -162,6 +166,8 @@ img {
 .services-section {
     background-color: #FFFFFF;
     padding: 120px 0;
+    margin-right: 156px;
+    margin-left: 156px;
 }
 .visually-hidden {
   position: absolute;
@@ -201,6 +207,8 @@ img {
     background-color: #F4F4FD;
     padding-top: 120px;
   padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 .team-heading {
         font-size: 36px;
@@ -246,6 +254,8 @@ width: calc((100% - 72px) / 4);
     padding-top: 120px;
   padding-bottom: 120px;
     background-color: #E7E9FC;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 .portfolio-heading {
     font-size: 36px;
@@ -291,10 +301,16 @@ width: calc((100% - 72px) / 4);
     padding: 100px 0; 
   }  
 .footer-container .container {
-  width: 1158px;
+  width: 264px;
     margin: 0 auto;
     padding: 0 15px;
   }
+    .footer-container {
+      width: 1440px;
+      margin: 0 auto;
+      padding: 0 15px;
+      
+    }
   .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
