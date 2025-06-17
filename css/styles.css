@@ -37,12 +37,12 @@ padding: 0 15px;
 .header {
   border-bottom: 1px solid #e7e9fc
 }
-.header-container .container {
+/* .header-container .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
-}
+} */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -58,9 +58,9 @@ padding: 0 15px;
 .logo-accent {
     color: #2e2f42; 
 }
-.header-container{
+.header-container {
     display: flex;
-  align-items: center;
+  align-items: center; 
   padding-top: 24px;
   padding-bottom: 24px;
   gap: 76px;
