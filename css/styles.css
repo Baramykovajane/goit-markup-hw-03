@@ -47,7 +47,7 @@ margin: 0 auto;
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    margin-right: 76px;
+    
 }
 .logo-accent {
     color: #2e2f42;
@@ -55,25 +55,26 @@ margin: 0 auto;
 }
 .header-container{
     display: flex;
-    align-items: center;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
   gap: 76px;
+  margin-left: auto;
+  justify-content: space-between;
 }
 .nav {
     display: flex;
    gap: 40px;
     align-items: center;
 }
-.contact-block ul {
-  display: flex;
-  gap: 40px;
-}
+
 .nav-menu {
     display: flex;
     gap: 40px;
-    align-items: center;
+    align-items: center; 
   list-style: none;
+  
+  
 }
 .nav-link {
     font-family: "Roboto", sans-serif;
@@ -90,8 +91,6 @@ margin: 0 auto;
 }
 .contact-block {
     font-style: normal;
-    display: flex;
-  gap: 4px;
 }
 .contact-link {
     font-family: "Roboto", sans-serif;
@@ -130,7 +129,6 @@ margin: 0 auto;
   background-color: #2e2f42;
   padding: 188px 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 24px;
 }
@@ -154,13 +152,9 @@ margin: 0 auto;
 .hero-button:focus {
     background-color: #404bbf;
 } 
-.services-list,
-.team-list,
-.portfolio-list {
+.services-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  
+    gap: 24px;
 }
 .services-section {
     background-color: #FFFFFF;
@@ -185,12 +179,13 @@ margin: 0 auto;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42; 
-        margin-bottom: 8px;       
+        margin-bottom: 8px; 
+        width: calc((100% - 72px) / 4);
 }
 
-.service-item {
-    width: calc((100% - 72px) / 4);
-}
+/* .service-item {
+    /* width: calc((100% - 72px) / 4); */
+/* }*/ 
 .description {
         font-size: 16px;
         line-height: 1.5;
@@ -214,6 +209,10 @@ margin: 0 auto;
 }
 .team-list > li {
     background-color: #FFFFFF
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-item {
 border-radius: 0px 0px 4px 4px; 
@@ -258,6 +257,9 @@ width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
 }
 .portfolio-list {
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 48px;
 }
 .portfolio-name {
