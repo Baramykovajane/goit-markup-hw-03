@@ -64,7 +64,6 @@ padding: 0 15px;
       flex-direction: row;
       align-items: center;
       padding: 24px 156px;
-      height: 72px;
       border-bottom: 1px solid #e7e9fc;
 }
 .main-nav {
@@ -87,6 +86,7 @@ padding: 0 15px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0; 
+    display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -166,8 +166,6 @@ padding: 0 15px;
 .services-section {
     background-color: #FFFFFF;
     padding: 120px 0;
-    margin-right: 156px;
-    margin-left: 156px;
 }
 .visually-hidden {
   position: absolute;
@@ -259,8 +257,7 @@ width: calc((100% - 72px) / 4);
     text-align: center;
     text-transform: capitalize;
     color:#2e2f42;
-    margin-top: 120px;
-        margin-bottom: 72px;
+    margin-bottom: 72px;
 }
 .portfolio-list > li {
     background-color: #FFFFFF;
@@ -289,7 +286,6 @@ width: calc((100% - 72px) / 4);
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        margin-bottom: 24px;
  }
   .footer {
     background-color: #2E2F42;
